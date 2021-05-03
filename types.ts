@@ -22,7 +22,7 @@ const logIt = foobar(8, 7);
 
 // functions can return generic functions with types
 type Foou<T> = <U extends number>(x: T, y: U) => number;
-const foou: Foou<5> = (x, y) => x + y; // resolves to concrete type (LHS)
+const foou: Foou<5> = (x, y) => x + y; // resolves to concrete type (LHS);
 
 foou(5, 7); // fine
 foou(5, 8); // fine
